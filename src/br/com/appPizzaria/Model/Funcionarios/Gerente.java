@@ -92,7 +92,7 @@ public class Gerente extends Funcionario implements IContratar {
                 System.out.println("Menor de idade não pode ser contratado");
             }
         }
-        return new Garcom(nome, idade, new Data(dia, EnumMes.values()[mes], ano));
+        return new Garcom(nome, idade, new Data(dia, EnumMes.values()[mes - 1], ano));
     }
 
 
